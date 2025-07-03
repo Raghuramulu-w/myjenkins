@@ -2,8 +2,7 @@ pipeline {
     agent {
     node {
         label 'agent-1'
-        #customWorkspace '/some/other/path'
-    }
+        }
 }
 
     stages {
