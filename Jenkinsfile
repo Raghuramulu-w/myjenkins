@@ -12,5 +12,13 @@ pipeline {
             }
         }
     }
+
+
+post { 
+        always { 
+            echo 'Iam sying Hello again!'
+        }
+    }
 }
+
 
