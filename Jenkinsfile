@@ -1,26 +1,23 @@
 pipeline {
-    agent {
-    node {
-        label 'agent-1'
-        }
-}
-
+    agent any
     stages {
-        stage('Build') {
+        stage('build') {
             steps {
-                echo 'Building..'
+                echo 'Hello this is building block'
             }
         }
-        stage('Test') {
+    
+        stage('prod'){
             steps {
-                echo 'Testing..'
-                echo 'raghu using testing'
+                echo " this is production block"
             }
         }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
+    
+       stage('test'){
+        steps {
+            echo "this is testing block"
         }
+       }
+    
     }
-} 
+}
